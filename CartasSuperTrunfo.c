@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    // Primeira Carta - Minas Gerais
+    // Primeira Carta
     int primeiroestado;
     char estado1 = 'A';
     char codigoestado1[3];
