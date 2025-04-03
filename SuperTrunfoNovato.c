@@ -3,8 +3,8 @@
 int main(){
     // Primeira Carta - Minas Gerais
     int primeiroestado;
-    char estado1 = 'A';
-    char codigoestado1[3];
+    char estado1;
+    char codigoestado1;
     char primeiracidade[50];
     int populacao1;
     float area1;
@@ -14,7 +14,7 @@ int main(){
     // Segunda Carta
     int segundoestado;
     char estado2;
-    char codigoestado2[3];
+    char codigoestado2[5];
     char segundacidade[50];
     int populacao2;
     float area2;
@@ -26,10 +26,10 @@ int main(){
     scanf(" %c", &estado1); // Lê o estado (A - H)
 
     printf("Digite o código do estado: \n");
-    scanf("%2s", codigoestado1); // Lê o código do estado
+    scanf("%s", &codigoestado1); // Lê o código do estado
 
     printf("Digite o nome da cidade (Abreviada ex: BH): \n");
-    scanf(" %s", &primeiracidade); // Lê o nome da cidade
+    scanf("%s", &primeiracidade); // Lê o nome da cidade
 
     printf("Digite a população (aproximadamente) da cidade: \n");
     scanf("%d", &populacao1); // Lê a população da cidade
@@ -48,10 +48,10 @@ int main(){
     scanf(" %c", &estado2); // Lê o estado (A - H)
 
     printf("Digite o código do estado: \n");
-    scanf("%s", codigoestado2); // Lê o código do estado
+    scanf("%s", &codigoestado2); // Lê o código do estado
 
     printf("Digite o nome da cidade (Abreviada ex: BH): \n");
-    scanf(" %s", &segundacidade); // Lê o nome da cidade
+    scanf("%s", &segundacidade); // Lê o nome da cidade
 
     printf("Digite a população (aproximadamente) da cidade: \n");
     scanf("%d", &populacao2); // Lê a população da cidade
@@ -73,7 +73,7 @@ int main(){
     printf("Nome da Cidade: %s\n", primeiracidade);
     printf("População: %d\n", populacao1);
     printf("Área: %.2f km²\n", area1);
-    printf("PIB: %.2f bilhões de Reais\n", pib1);
+    printf("PIB: %.2f\n bilhões de Reais\n", pib1);
     printf("Pontos Turísticos: %d\n", turisticos1);
     
     // Resultado Carta 2
@@ -83,7 +83,7 @@ int main(){
     printf("Nome da Cidade: %s\n", segundacidade);
     printf("População: %d\n", populacao2);
     printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhões de Reais\n", pib2);
+    printf("PIB: %.2f\n bilhões de Reais\n", pib2);
     printf("Pontos Turísticos: %d\n", turisticos2);
     
     
