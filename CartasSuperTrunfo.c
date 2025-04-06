@@ -10,7 +10,8 @@ int main(){
     float area1;
     float pib1;
     int turisticos1;
-
+    float dp1;
+    float ppc1;
     // Segunda Carta
     int segundoestado;
     char estado2;
@@ -20,16 +21,18 @@ int main(){
     float area2;
     float pib2;
     int turisticos2;
+    float dp2;
+    float ppc2;
 
     // Lendo a Primeira Carta
     printf("Digite uma letra para selecionar o estado (A - H): \n");
     scanf(" %c", &estado1); // Lê o estado (A - H)
 
     printf("Digite o código do estado: \n");
-    scanf("%2s", codigoestado1); // Lê o código do estado
+    scanf("%s", codigoestado1); // Lê o código do estado
 
     printf("Digite o nome da cidade (Abreviada ex: BH): \n");
-    scanf(" %s", &primeiracidade); // Lê o nome da cidade
+    scanf(" %s", primeiracidade); // Lê o nome da cidade
 
     printf("Digite a população (aproximadamente) da cidade: \n");
     scanf("%d", &populacao1); // Lê a população da cidade
@@ -51,7 +54,7 @@ int main(){
     scanf("%s", codigoestado2); // Lê o código do estado
 
     printf("Digite o nome da cidade (Abreviada ex: BH): \n");
-    scanf(" %s", &segundacidade); // Lê o nome da cidade
+    scanf(" %s", segundacidade); // Lê o nome da cidade
 
     printf("Digite a população (aproximadamente) da cidade: \n");
     scanf("%d", &populacao2); // Lê a população da cidade
@@ -75,7 +78,10 @@ int main(){
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de Reais\n", pib1);
     printf("Pontos Turísticos: %d\n", turisticos1);
-    
+    dp1 = (float) populacao1 / area1;
+    printf("Densidade Populacional: %.2f habitantes/km²\n", dp1);
+    ppc1 = (float) pib1 / populacao1;
+    printf("PIB per Capita: %.2f Reais\n", ppc1);
     // Resultado Carta 2
     printf("\n Carta 2 \n");
     printf("Estado: %c\n", estado2);
@@ -85,8 +91,10 @@ int main(){
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de Reais\n", pib2);
     printf("Pontos Turísticos: %d\n", turisticos2);
-    
-    
+    dp2 = (float) populacao2 / area2; 
+    printf("Densidade Populacional: %.2f habitantes/km²\n", dp2);
+    ppc2 = (float) pib2 / populacao2;
+    printf("PIB per Capita: %.2f Reais\n", ppc2);
     return 0;
 
 
