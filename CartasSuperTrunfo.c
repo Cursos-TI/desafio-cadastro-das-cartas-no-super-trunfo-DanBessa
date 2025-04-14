@@ -12,10 +12,7 @@ int main(){
     int turisticos1;
     float dp1;
     float ppc1;
-<<<<<<< HEAD
     float superpoder1;
-=======
->>>>>>> 8e1f47007095f721509e1fa9f547d88adb58b505
     // Segunda Carta
     int segundoestado;
     char estado2;
@@ -27,10 +24,7 @@ int main(){
     int turisticos2;
     float dp2;
     float ppc2;
-<<<<<<< HEAD
     float superpoder2;
-=======
->>>>>>> 8e1f47007095f721509e1fa9f547d88adb58b505
 
     // Lendo a Primeira Carta
     printf("Digite uma letra para selecionar o estado (A - H): \n");
@@ -38,18 +32,11 @@ int main(){
     getchar();
 
     printf("Digite o código do estado: \n");
-<<<<<<< HEAD
     scanf("%s", codigoestado1);
     getchar();
 
     printf("Digite o nome da cidade (Abreviada ex: BH): \n");
     fgets(primeiracidade, sizeof(primeiracidade), stdin);
-=======
-    scanf("%s", codigoestado1); // Lê o código do estado
-
-    printf("Digite o nome da cidade (Abreviada ex: BH): \n");
-    scanf(" %s", primeiracidade); // Lê o nome da cidade
->>>>>>> 8e1f47007095f721509e1fa9f547d88adb58b505
 
     printf("Digite a população (aproximadamente) da cidade: \n");
     scanf("%d", &populacao1);
@@ -77,11 +64,7 @@ int main(){
     getchar();
 
     printf("Digite o nome da cidade (Abreviada ex: BH): \n");
-<<<<<<< HEAD
     fgets(segundacidade, sizeof(segundacidade), stdin);
-=======
-    scanf(" %s", segundacidade); // Lê o nome da cidade
->>>>>>> 8e1f47007095f721509e1fa9f547d88adb58b505
 
     printf("Digite a população (aproximadamente) da cidade: \n");
     scanf("%d", &populacao2);
@@ -125,7 +108,6 @@ int main(){
     printf("Densidade Populacional: %.2f habitantes/km²\n", dp2);
     ppc2 = (float) pib2 / populacao2;
     printf("PIB per Capita: %.2f Reais\n", ppc2);
-<<<<<<< HEAD
 
     // Super Poder
     superpoder1 = (float) populacao1 + area1 + pib1 + turisticos1 + ppc1 + (1 / dp1);
@@ -152,12 +134,10 @@ int main(){
    
     // Comparar os superpoderes
     superpoder1 <= superpoder2;
-    printf("A carta 1 tem mais super poder que a carta 2? %d\n", superpoder1 <= superpoder2);
+    printf("A carta 1 tem mais super poder que a carta 2: %d\n", superpoder1 <= superpoder2);
 
     printf("**** Fim da comparação ***\n");
     
-=======
->>>>>>> 8e1f47007095f721509e1fa9f547d88adb58b505
     return 0;
 
 }
